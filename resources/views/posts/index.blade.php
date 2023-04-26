@@ -1,17 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <h2 class="fs-4 text-secondary my-4">
-        {{ __('Projects') }}
-    </h2>
-    <div class="row justify-content-center">
-        <div class="col">
-            <div class="card">
-                <div class="card-header">{{ __('Your projects') }}</div>
-
-                <div class="card-body">
-                <div class="container py-5">
+    <div class="container py-5">
       <div class="d-flex align-items-center">
         <h1 class="me-auto">Tutti i post</h1>
 
@@ -57,9 +47,4 @@
         </tbody>
       </table>
     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 @endsection

@@ -14,12 +14,12 @@ return new class extends Migration
     public function up()
     {
         Schema::create('projects', function (Blueprint $table) {
-            $table->id("id");
-            $table->string("nome", 50);
-            $table->text("descrizione");
-            $table->string("link");
-            $table->string("data_consegna");
-            $table->boolean("completato");
+            $table->id();
+            $table->string('title', 150)->unique();
+            $table->text('content')->nullable();
+            $table->string('slug');
+            $table->softDeletes();
+            $table->timestamps();
         });
     }
 
